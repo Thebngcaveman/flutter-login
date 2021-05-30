@@ -10,10 +10,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
-      routes: <String,WidgetBuilder>{
-        '/signup':(BuildContext context)=> SignupPage()
+      routes: <String, WidgetBuilder>{
+        '/signup': (BuildContext context) => SignupPage(),
+        '/home': (BuildContext context) => HomeScreen(),
       },
     );
   }
 }
-

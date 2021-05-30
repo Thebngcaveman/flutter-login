@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.fromLTRB(15, 110, 0, 0),
                   child: Text(
-                    'Hello',
+                    'Hola',
                     style: TextStyle(
                       fontSize: 80,
                       fontWeight: FontWeight.bold,
@@ -23,22 +23,22 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.fromLTRB(15, 175, 0, 0),
+                  padding: EdgeInsets.fromLTRB(15, 200, 0, 0),
                   child: Text(
-                    'There',
+                    'COMO ESTAS',
                     style: TextStyle(
-                      fontSize: 80,
+                      fontSize: 40,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Montserrat',
                     ),
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.fromLTRB(240, 175, 0, 0),
+                  padding: EdgeInsets.fromLTRB(290, 200, 0, 0),
                   child: Text(
-                    '.',
+                    '?',
                     style: TextStyle(
-                      fontSize: 80,
+                      fontSize: 40,
                       fontWeight: FontWeight.bold,
                       fontFamily: 'Montserrat',
                       color: Colors.green,
@@ -174,7 +174,9 @@ class HomeScreen extends StatelessWidget {
                 width: 5,
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed('/signup');
+                },
                 child: Text(
                   'Register',
                   style: TextStyle(
